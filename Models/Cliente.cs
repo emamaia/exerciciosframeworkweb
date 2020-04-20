@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,9 +14,9 @@ namespace EntityFramework_exercicio.Models
         public int Telefone { get; set; }
         public string Endereco { get; set; }
 
-        public static List<Cliente> Lista()
+        public static DbSet<Cliente> Busca()
         {
-            return _db.Clientes.ToList();
+            return _db.Clientes;
         }   
 
         public bool Salvar()

@@ -17,8 +17,8 @@ namespace EntityFramework_exercicio.Models
                 /* optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["conexao"].ConnectionString); */             
 
              } 
-    }
-    public DbSet<Cliente> Clientes { get; set; }
+         }
+        public DbSet<Cliente> Clientes { get; set; }
 
     }
 }
